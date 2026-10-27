@@ -1,0 +1,408 @@
+/*
+Theme Name: Sproject
+Theme URI: 
+Author: 
+Author URI: 
+Description: Sproject Original WordPress Theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: site0003
+*/
+
+@charset "UTF-8";
+
+/* 
+  Sproject - Light Premium Japanese Aesthetic
+*/
+
+/* Custom Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
+
+/* Hero Main Copy - staggered character reveal */
+.hero-copy {
+    display: inline-block;
+}
+
+.hero-char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    transition-delay: calc(var(--i) * 45ms);
+    white-space: pre;
+}
+
+.hero-copy.is-visible .hero-char {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Typography & Vertical Text (Japanese Premium Feel) */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.3em;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.font-mincho {
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* Section Titles */
+h2.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #1e3250; /* Navy Blue */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+h2.section-title::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #d84b8f; /* Pink Accent */
+    margin-top: 1.5rem;
+}
+
+h2.section-title span.subtitle {
+    display: block;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    letter-spacing: 0.15em;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+h2.section-title.text-white::after {
+    background-color: #d84b8f;
+}
+
+/* Premium Image Placeholder for img folder usage */
+.premium-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #f0f4f8; /* Light gray-blue placeholder background */
+}
+
+.premium-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.premium-img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Placeholder specifically */
+.img-placeholder {
+    background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    position: relative;
+}
+
+.img-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(30,50,80,0.05);
+}
+
+/* Cards & Elements Hover */
+.premium-card {
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+}
+
+.premium-card:hover {
+    border-color: rgba(216, 75, 143, 0.2); /* Pink tint */
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(30,50,80,0.06);
+}
+
+/* Custom Scrollbar for Elegance */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc; 
+}
+::-webkit-scrollbar-thumb {
+    background: #1e3250; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d84b8f; 
+}
+
+/* Contact Form 7 plugin styles */
+.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	word-wrap: normal !important;
+}
+
+.wpcf7 .hidden-fields-container {
+	display: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+	border: 2px solid #00a0d2; /* Blue */
+}
+
+.wpcf7 form.init .wpcf7-response-output,
+.wpcf7 form.resetting .wpcf7-response-output,
+.wpcf7 form.submitting .wpcf7-response-output {
+	display: none;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: #46b450; /* Green */
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+	border-color: #dc3232; /* Red */
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+	border-color: #f56e28; /* Orange */
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: #ffb900; /* Yellow */
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+.wpcf7-not-valid-tip {
+	color: #dc3232; /* Red */
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+	position: relative;
+	top: -2ex;
+	left: 1em;
+	z-index: 100;
+	border: 1px solid #dc3232;
+	background: #fff;
+	padding: .2em .8em;
+	width: 24em;
+}
+
+.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+.wpcf7-list-item-label::before,
+.wpcf7-list-item-label::after {
+	content: " ";
+}
+
+.wpcf7-spinner {
+	visibility: hidden;
+	display: inline-block;
+	background-color: #23282d; /* Dark Gray 800 */
+	opacity: 0.75;
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: 100%;
+	padding: 0;
+	margin: 0 24px;
+	position: relative;
+}
+
+form.submitting .wpcf7-spinner {
+	visibility: visible;
+}
+
+.wpcf7-spinner::before {
+	content: '';
+	position: absolute;
+	background-color: #fbfbfc; /* Light Gray 100 */
+	top: 4px;
+	left: 4px;
+	width: 6px;
+	height: 6px;
+	border: none;
+	border-radius: 100%;
+	transform-origin: 8px 8px;
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wpcf7-spinner::before {
+		animation-name: blink;
+		animation-duration: 2000ms;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes blink {
+	from {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.wpcf7 [inert] {
+	opacity: 0.5;
+}
+
+.wpcf7 input[type="file"] {
+	cursor: pointer;
+}
+
+.wpcf7 input[type="file"]:disabled {
+	cursor: default;
+}
+
+.wpcf7 .wpcf7-submit:disabled {
+	cursor: not-allowed;
+}
+
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"] {
+	direction: ltr;
+}
+
+.wpcf7-reflection > output {
+	display: list-item;
+	list-style: none;
+}
+
+.wpcf7-reflection > output[hidden] {
+	display: none;
+}
+
+/* Contact form styling (from front-page.php) */
+/* Premium styling for CF7 default form */
+                    .cf7-container label {
+                        font-weight: 700;
+                        color: #1e3250;
+                        font-size: 0.85rem;
+                        letter-spacing: 0.1em;
+                        margin-bottom: 0.5rem;
+                        display: block;
+                    }
+                    .cf7-container input[type="text"],
+                    .cf7-container input[type="email"],
+                    .cf7-container input[type="tel"],
+                    .cf7-container select,
+                    .cf7-container textarea {
+                        width: 100%;
+                        padding: 1rem;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 2px;
+                        background-color: #ffffff;
+                        font-size: 0.9rem;
+                        color: #4a4a4a;
+                        margin-bottom: 1.5rem;
+                        transition: all 0.3s;
+                    }
+                    .cf7-container input:focus,
+                    .cf7-container select:focus,
+                    .cf7-container textarea:focus {
+                        outline: none;
+                        border-color: #d84b8f;
+                        box-shadow: 0 0 0 3px rgba(216, 75, 143, 0.1);
+                    }
+                    .cf7-container input[type="submit"] {
+                        background-color: #1e3250;
+                        color: #ffffff;
+                        border: none;
+                        padding: 1rem 3rem;
+                        font-weight: 700;
+                        letter-spacing: 0.2em;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        width: 100%;
+                        font-size: 0.9rem;
+                        margin-top: 1rem;
+                    }
+                    .cf7-container input[type="submit"]:hover {
+                        background-color: #d84b8f;
+                        transform: translateY(-2px);
+                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                    }
+                    .wpcf7-not-valid-tip {
+                        font-size: 0.75rem;
+                        margin-top: -1rem;
+                        margin-bottom: 1rem;
+                        color: #ef4444;
+                    }

@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Icon change
             const icon = btn.querySelector('i');
+            const isOpen = !menu.classList.contains('hidden');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
             if (menu.classList.contains('hidden')) {
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
@@ -48,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     menu.classList.add('hidden');
                     menu.classList.add('opacity-0');
                     menu.classList.add('translate-y-[-10px]');
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.setAttribute('aria-label', 'メニューを開く');
                     const icon = btn.querySelector('i');
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');

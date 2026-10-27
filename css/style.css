@@ -106,6 +106,17 @@ h2.section-title.text-white::after {
     background-color: #d84b8f;
 }
 
+/* Left-aligned variant (the base rule outranks Tailwind's .items-start) */
+h2.section-title.items-start {
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    h2.section-title {
+        margin-bottom: 3rem;
+    }
+}
+
 /* Premium Image Placeholder for img folder usage */
 .premium-img-wrapper {
     position: relative;
@@ -120,8 +131,10 @@ h2.section-title.text-white::after {
     transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.premium-img-wrapper:hover img {
-    transform: scale(1.05);
+@media (hover: hover) {
+    .premium-img-wrapper:hover img {
+        transform: scale(1.05);
+    }
 }
 
 /* Placeholder specifically */
@@ -150,11 +163,25 @@ h2.section-title.text-white::after {
     border: 1px solid transparent;
 }
 
-.premium-card:hover {
-    border-color: rgba(216, 75, 143, 0.2); /* Pink tint */
-    background-color: #ffffff;
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(30,50,80,0.06);
+/* Hover lift only on pointer devices, so a tap on a phone doesn't leave a card stuck raised */
+@media (hover: hover) {
+    .premium-card:hover {
+        border-color: rgba(216, 75, 143, 0.2); /* Pink tint */
+        background-color: #ffffff;
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(30,50,80,0.06);
+    }
+}
+
+/* Respect the OS "reduce motion" setting: show content without animating it in */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in-up,
+    .fade-in,
+    .hero-char {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 /* Custom Scrollbar for Elegance */
@@ -351,7 +378,8 @@ form.submitting .wpcf7-spinner {
 
 /* Contact form styling (from front-page.php) */
 /* Premium styling for CF7 default form */
-                    .cf7-container label {
+                    .cf7-container label,
+                    .cf7-container legend {
                         font-weight: 700;
                         color: #1e3250;
                         font-size: 0.85rem;
@@ -369,7 +397,7 @@ form.submitting .wpcf7-spinner {
                         border: 1px solid #e5e7eb;
                         border-radius: 2px;
                         background-color: #ffffff;
-                        font-size: 0.9rem;
+                        font-size: 16px; /* 16px+ keeps iOS Safari from zooming in on focus */
                         color: #4a4a4a;
                         margin-bottom: 1.5rem;
                         transition: all 0.3s;
@@ -399,6 +427,38 @@ form.submitting .wpcf7-spinner {
                         background-color: #d84b8f;
                         transform: translateY(-2px);
                         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                    }
+                    .cf7-container fieldset.cf7-group {
+                        border: 0;
+                        padding: 0;
+                        margin: 0 0 1.5rem;
+                    }
+                    .cf7-container .wpcf7-checkbox {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0.5rem 1.5rem;
+                    }
+                    .cf7-container .wpcf7-list-item {
+                        margin: 0;
+                    }
+                    .cf7-container .wpcf7-list-item label {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.6rem;
+                        min-height: 44px;
+                        margin: 0;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                    .cf7-container input[type="checkbox"] {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        accent-color: #d84b8f;
+                        flex-shrink: 0;
+                    }
+                    .cf7-container .wpcf7-spinner {
+                        display: block;
+                        margin: 0.75rem auto 0;
                     }
                     .wpcf7-not-valid-tip {
                         font-size: 0.75rem;

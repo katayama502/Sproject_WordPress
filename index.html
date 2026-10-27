@@ -6,7 +6,7 @@
     <title>S.project | 山陰を、もっと面白がる。</title>
     <meta name="description" content="S.projectは、山陰出身または山陰に関係するメンバーで構成される、山陰のための地域共創プラットフォームです。">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&amp;family=Noto+Sans+JP:wght@300;400;500&amp;family=Noto+Serif+JP:wght@300;400;500;600&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
@@ -18,11 +18,11 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html" class="font-en font-bold text-2xl tracking-[0.2em] text-primary">
-                        Sproject<span class="text-accent">.</span>
+                        S<span class="text-accent">.</span>project
                     </a>
                 </div>
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-12 items-center">
+                <div class="hidden md:flex md:ml-8 md:space-x-7 lg:space-x-12 items-center">
                     <a href="#vision" class="text-xs font-en tracking-[0.1em] font-medium text-primary hover:text-accent transition-colors duration-300">ABOUT</a>
                     <a href="#services" class="text-xs font-en tracking-[0.1em] font-medium text-primary hover:text-accent transition-colors duration-300">SERVICES</a>
                     <a href="#works" class="text-xs font-en tracking-[0.1em] font-medium text-primary hover:text-accent transition-colors duration-300">WORKS</a>
@@ -31,7 +31,7 @@
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-primary hover:text-accent focus:outline-none transition-colors">
+                    <button id="mobile-menu-btn" type="button" class="w-11 h-11 -mr-3 flex items-center justify-center text-primary hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -40,11 +40,11 @@
         
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg opacity-0 translate-y-[-10px] transition-all duration-300 z-40">
-            <div class="px-6 py-8 space-y-6 flex flex-col items-center">
-                <a href="#vision" class="mobile-link text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">ABOUT</a>
-                <a href="#services" class="mobile-link text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">SERVICES</a>
-                <a href="#works" class="mobile-link text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">WORKS</a>
-                <a href="#members" class="mobile-link text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">MEMBERS</a>
+            <div class="px-6 py-6 space-y-3 flex flex-col items-center">
+                <a href="#vision" class="mobile-link py-2 text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">ABOUT</a>
+                <a href="#services" class="mobile-link py-2 text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">SERVICES</a>
+                <a href="#works" class="mobile-link py-2 text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">WORKS</a>
+                <a href="#members" class="mobile-link py-2 text-sm font-en tracking-[0.2em] font-medium text-primary hover:text-accent transition">MEMBERS</a>
                 <a href="#contact" class="mobile-link mt-4 border border-primary text-primary px-10 py-3 text-sm tracking-[0.1em] font-en font-medium hover:bg-primary hover:text-white transition-all rounded-sm">CONTACT</a>
             </div>
         </div>
@@ -61,30 +61,19 @@
             <div class="absolute inset-0 bg-primary/45 mix-blend-multiply"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-transparent to-bgDark"></div>
             <div class="absolute inset-0 backdrop-blur-[1px]"></div>
+            <!-- Soft scrim behind the copy so white text stays readable on bright video frames -->
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(30,50,80,0.55)_0%,rgba(30,50,80,0.3)_40%,transparent_72%)]"></div>
         </div>
 
         <div class="relative z-20 flex flex-col items-center px-6 max-w-5xl mx-auto w-full justify-center text-center fade-in-up py-20">
             <!-- Top Sub Title / Brand Label -->
             <div class="mb-6 inline-flex items-center space-x-3">
                 <span class="h-[1px] w-8 bg-accent"></span>
-                <span class="font-en text-xs md:text-sm tracking-[0.4em] text-white/90 font-semibold uppercase">S.project</span>
+                <span class="font-en text-xs md:text-sm tracking-[0.4em] text-white/90 font-semibold">S.project</span>
                 <span class="h-[1px] w-8 bg-accent"></span>
             </div>
 
-                        <h1 class="hero-copy font-serif text-[5.5vw] sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.25em] text-white font-medium text-center drop-shadow-xl leading-none my-6 whitespace-nowrap" aria-label="山陰を、もっと面白がる。">
-                                    <span class="hero-char" style="--i: 0;" aria-hidden="true">山</span>
-                                    <span class="hero-char" style="--i: 1;" aria-hidden="true">陰</span>
-                                    <span class="hero-char" style="--i: 2;" aria-hidden="true">を</span>
-                                    <span class="hero-char" style="--i: 3;" aria-hidden="true">、</span>
-                                    <span class="hero-char" style="--i: 4;" aria-hidden="true">も</span>
-                                    <span class="hero-char" style="--i: 5;" aria-hidden="true">っ</span>
-                                    <span class="hero-char" style="--i: 6;" aria-hidden="true">と</span>
-                                    <span class="hero-char" style="--i: 7;" aria-hidden="true">面</span>
-                                    <span class="hero-char" style="--i: 8;" aria-hidden="true">白</span>
-                                    <span class="hero-char" style="--i: 9;" aria-hidden="true">が</span>
-                                    <span class="hero-char" style="--i: 10;" aria-hidden="true">る</span>
-                                    <span class="hero-char" style="--i: 11;" aria-hidden="true">。</span>
-                            </h1>
+                        <h1 class="hero-copy font-serif text-[8vw] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.2em] sm:tracking-[0.45em] md:tracking-[0.5em] text-white font-medium text-center drop-shadow-xl leading-[1.6] sm:leading-none my-6 whitespace-nowrap" aria-label="山陰を、もっと面白がる。"><span class="hero-char" style="--i: 0;" aria-hidden="true">山</span><span class="hero-char" style="--i: 1;" aria-hidden="true">陰</span><span class="hero-char" style="--i: 2;" aria-hidden="true">を</span><span class="hero-char" style="--i: 3;" aria-hidden="true">、</span><br class="sm:hidden"><span class="hero-char" style="--i: 4;" aria-hidden="true">も</span><span class="hero-char" style="--i: 5;" aria-hidden="true">っ</span><span class="hero-char" style="--i: 6;" aria-hidden="true">と</span><span class="hero-char" style="--i: 7;" aria-hidden="true">面</span><span class="hero-char" style="--i: 8;" aria-hidden="true">白</span><span class="hero-char" style="--i: 9;" aria-hidden="true">が</span><span class="hero-char" style="--i: 10;" aria-hidden="true">る</span><span class="hero-char" style="--i: 11;" aria-hidden="true">。</span></h1>
 
             <!-- Sub Description -->
             <p class="font-serif text-sm md:text-base tracking-[0.2em] text-white/80 mt-6 max-w-2xl font-light leading-relaxed drop-shadow-md">
@@ -100,37 +89,31 @@
     </section>
 
     <!-- About Section (S.projectとは) -->
-    <section id="vision" class="py-32 bg-bgDark">
+    <section id="vision" class="py-20 md:py-32 bg-bgDark">
         <div class="max-w-6xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-24 items-center">
 
-                <div class="lg:col-span-6 fade-in-up order-2 lg:order-1">
+                <div class="lg:col-span-6 min-w-0 fade-in-up order-2 lg:order-1">
                     <div class="premium-img-wrapper aspect-[3/2] w-full shadow-2xl rounded-lg overflow-hidden border border-gray-100/50 group">
                         <img src="img/group.jpg" alt="S.project メンバー集合写真" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 fade-in-up delay-200 order-1 lg:order-2 flex flex-col items-start">
+                <div class="lg:col-span-6 min-w-0 fade-in-up delay-200 order-1 lg:order-2 flex flex-col items-start">
                     <h2 class="section-title items-start mb-12">
-                        S.projectとは
+                        <span><span class="normal-case">S.project</span>とは</span>
                         <span class="subtitle">山陰のための地域共創プラットフォーム</span>
                     </h2>
 
                     <div class="font-serif space-y-8 text-base md:text-lg leading-[2.2] tracking-widest text-primary/90">
                         <p>
-                            S.projectは、山陰出身または山陰に関係する<br class="hidden md:block">
-                            メンバーで構成される、山陰のための<br class="hidden md:block">
-                            <span class="text-accent font-bold">「地域共創プラットフォーム」</span>です。
+                            S.projectは、山陰出身または山陰に関係する<br class="hidden md:block">メンバーで構成される、山陰のための<br class="hidden md:block"><span class="text-accent font-bold">「地域共創プラットフォーム」</span>です。
                         </p>
                         <p>
-                            プロデューサー、SNSマーケター、動画クリエイター、<br class="hidden md:block">
-                            インフルエンサー、フォトグラファーなど、<br class="hidden md:block">
-                            様々な強みをもったメンバーが集まっています。
+                            プロデューサー、SNSマーケター、動画クリエイター、<br class="hidden md:block">インフルエンサー、フォトグラファーなど、<br class="hidden md:block">様々な強みをもったメンバーが集まっています。
                         </p>
                         <p>
-                            それぞれが個人で活動しており、<br class="hidden md:block">
-                            自立・自律したメンバーが集うチーム。<br class="hidden md:block">
-                            挑戦している人同士の化学反応により、
+                            それぞれが個人で活動しており、<br class="hidden md:block">自立・自律したメンバーが集うチーム。<br class="hidden md:block">挑戦している人同士の化学反応により、
                         </p>
                         <div class="pt-8 border-t border-gray-300 mt-12 w-32"></div>
                         <p class="font-bold text-primary tracking-[0.2em] text-sm md:text-base mt-4">
@@ -144,9 +127,9 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-32 bg-white">
+    <section id="services" class="py-20 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="fade-in-up mb-24">
+            <div class="fade-in-up mb-12 md:mb-24">
                 <h2 class="section-title">
                     Services
                     <span class="subtitle">できること</span>
@@ -154,15 +137,15 @@
             </div>
 
             
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                                            <div class="premium-card p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                                            <div class="premium-card p-7 md:p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
                             <span class="text-accent font-en text-sm tracking-widest block mb-6 font-bold">01</span>
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">SNS運用</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>Instagramを中心に、アカウント設計から投稿企画・撮影・分析までを伴走。ターゲットと地域を明確にした発信で、フォロワー増加や売上向上につなげます。（実績：きいろいお店様 OPEN2ヶ月目で半年後の目標売上を達成、いづも寒天工房様 売上前年同月比 約1.5〜2倍 ほか）</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
+                                            <div class="premium-card p-7 md:p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
                             <span class="text-accent font-en text-sm tracking-widest block mb-6 font-bold">02</span>
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">リール動画制作</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
@@ -172,21 +155,21 @@
 <p class="wp-block-paragraph"></p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
+                                            <div class="premium-card p-7 md:p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
                             <span class="text-accent font-en text-sm tracking-widest block mb-6 font-bold">03</span>
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">PR・メディア取材獲得支援</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>「宣伝」「広告」だけではなく「広報」「メディア」の視点で伸びる地方戦略を。プレスリリースの作成代行や、時流に沿った話題づくりで新聞・TVなどの取材獲得を支援します。（実績：ちぃたびグルメフェスでNHKほか計5社の取材獲得・来場者5,000人）</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
+                                            <div class="premium-card p-7 md:p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
                             <span class="text-accent font-en text-sm tracking-widest block mb-6 font-bold">04</span>
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">地域ブランディング</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>ローカルコンテンツの企画・制作。地域を軸にした新たなブランド立ち上げにより地域の価値を高めます。</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
+                                            <div class="premium-card p-7 md:p-10 bg-bgDark fade-in-up rounded-sm shadow-sm h-full">
                             <span class="text-accent font-en text-sm tracking-widest block mb-6 font-bold">05</span>
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">SNS勉強会</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
@@ -216,9 +199,9 @@
     </section>
 
     <!-- Projects Section (生まれている事業) -->
-    <section id="projects" class="py-32 bg-bgDark border-t border-gray-200">
+    <section id="projects" class="py-20 md:py-32 bg-bgDark border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="fade-in-up mb-24">
+            <div class="fade-in-up mb-12 md:mb-24">
                 <h2 class="section-title">
                     Projects
                     <span class="subtitle">生まれている事業</span>
@@ -226,26 +209,26 @@
             </div>
 
             
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                            <div class="premium-card p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                                            <div class="premium-card p-7 md:p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">SNS運用代行</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>企業・店舗のSNSアカウントを、企画から投稿・分析まで一貫して代行運用します。</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
+                                            <div class="premium-card p-7 md:p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">SNS発信のサポート&amp;プロデュース</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>すでに発信をしている個人・事業者の世界観づくりや投稿戦略を伴走型でサポートします。</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
+                                            <div class="premium-card p-7 md:p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">リール動画制作</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>「つい見たくなる」を軸にした、ショート動画（リール）の企画・撮影・編集を行います。</p>
                             </div>
                         </div>
-                                            <div class="premium-card p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
+                                            <div class="premium-card p-7 md:p-10 bg-white border border-gray-200 rounded-sm shadow-sm h-full fade-in-up">
                             <h3 class="font-serif text-xl mb-4 tracking-widest text-primary font-bold">地方戦略（SNS運用／メディア活用）</h3>
                             <div class="text-sm leading-[2] text-gray-600 font-medium">
                                 <p>「宣伝」「広告」だけではなく「広報」「メディア」の視点で伸びる地方戦略を。Instagram運用・リール動画制作・プレスリリース作成・取材獲得までを一貫して支援しています。</p>
@@ -256,9 +239,9 @@
     </section>
 
     <!-- Works / Portfolio Section -->
-    <section id="works" class="py-32 bg-white relative border-y border-gray-200">
+    <section id="works" class="py-20 md:py-32 bg-white relative border-y border-gray-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="fade-in-up mb-24">
+            <div class="fade-in-up mb-12 md:mb-24">
                 <h2 class="section-title">
                     Works
                     <span class="subtitle">実績と信頼</span>
@@ -266,16 +249,16 @@
             </div>
 
                             <!-- Elegant Work Item 1 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-7 order-2 lg:order-1 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/chiitabi-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" fetchpriority="high" />                                                                    </div>
                             </div>
                             <div class="lg:col-span-5 order-1 lg:order-2">
                                 <div class="pl-0 lg:pl-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 01</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">ちぃたび（島根グルメ＆スポット紹介）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">ちぃたび（島根グルメ＆スポット紹介）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>S.project動画編集担当・隅井千晴本人が運用するInstagramアカウント。<br />＜運用2年＞</p>
 <p>▪︎ フォロワー3.9万人（10月現在）<br />▪︎ iPhoneを活用した再現性の高い撮影スキル<br />▪︎ ターゲットが明確でシンプル<br />▪︎ 地域が特定されている</p>
@@ -288,12 +271,12 @@
                                             </div>
                 </div>
                             <!-- Elegant Work Item 2 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-5">
                                 <div class="pr-0 lg:pr-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 02</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">石王観光株式会社様</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">石王観光株式会社様</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>＜運用2ヶ月＞</p>
 <p>▪︎ 1投稿でフォロワー700名以上増<br />▪︎ 社長自ら出演するトークリールで閲覧数上昇</p>
@@ -304,22 +287,22 @@
                                                                     </div>
                             </div>
                             <div class="lg:col-span-7 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/ishiou-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                                             </div>
                 </div>
                             <!-- Elegant Work Item 3 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-7 order-2 lg:order-1 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/kiiroi-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                             <div class="lg:col-span-5 order-1 lg:order-2">
                                 <div class="pl-0 lg:pl-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 03</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">きいろいお店様（出雲市内／からあげ専門店）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">きいろいお店様（出雲市内／からあげ専門店）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>＜運用10ヶ月＞</p>
 <p>▪︎ OPEN2ヶ月目で、半年後の目標売り上げ達成<br />▪︎ お店のキャラクターを設定したイメージ戦略<br />▪︎ メディア戦略を並行して実践<br />　取材獲得 → 新規来店者数増加</p>
@@ -332,12 +315,12 @@
                                             </div>
                 </div>
                             <!-- Elegant Work Item 4 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-5">
                                 <div class="pr-0 lg:pr-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 04</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">いづも寒天工房様（出雲大社／お土産・カフェ）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">いづも寒天工房様（出雲大社／お土産・カフェ）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>＜運用4ヶ月＞</p>
 <p>▪︎ 保存率：運用3ヶ月目で9倍、運用4ヶ月目で15倍<br />▪︎ 売上：前年同月の約1.5〜2倍<br />▪︎ 既存フォロワーの閲覧が約87％</p>
@@ -348,22 +331,22 @@
                                                                     </div>
                             </div>
                             <div class="lg:col-span-7 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/kanten-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                                             </div>
                 </div>
                             <!-- Elegant Work Item 5 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-7 order-2 lg:order-1 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/aya-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                             <div class="lg:col-span-5 order-1 lg:order-2">
                                 <div class="pl-0 lg:pl-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 05</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">民宿「彩」様（浜田市内／民宿）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">民宿「彩」様（浜田市内／民宿）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>▪︎ 依頼時フォロワー4人 → 投稿後300人増<br />▪︎ 閲覧数3.3万再生、予約獲得へ直結<br />▪︎ 開業時にプレスリリースを作成代行<br />　→ 新聞社2社、TV局1社から取材獲得</p>
                                     </div>
@@ -376,12 +359,12 @@
                                             </div>
                 </div>
                             <!-- Elegant Work Item 6 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-5">
                                 <div class="pr-0 lg:pr-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 06</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">ちぃたびグルメフェス（なぎの木テラス／浅利観光株式会社様）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">ちぃたびグルメフェス（なぎの木テラス／浅利観光株式会社様）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>▪︎ NHK、石見ケーブル、山陰中央新報、中国新聞、朝日新聞（計5社）の取材獲得<br />▪︎ SNS発信・事前のメディア掲載にて、5,000人の来場者数を獲得（予想来場者数の1.5倍）</p>
                                     </div>
@@ -392,22 +375,22 @@
                                                                     </div>
                             </div>
                             <div class="lg:col-span-7 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/gourmetfes-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                                             </div>
                 </div>
                             <!-- Elegant Work Item 7 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-7 order-2 lg:order-1 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="576" src="img/uploads/2026/10/karaage-media-1024x576.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                             <div class="lg:col-span-5 order-1 lg:order-2">
                                 <div class="pl-0 lg:pl-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 07</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">出雲市内 からあげ専門店様</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">出雲市内 からあげ専門店様</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>▪︎ 中東情勢、W杯など時流に沿った話題でコンスタントにメディアへ掲載<br />▪︎ 新聞・TVを観た新規顧客の獲得</p>
                                     </div>
@@ -419,12 +402,12 @@
                                             </div>
                 </div>
                             <!-- Elegant Work Item 8 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-5">
                                 <div class="pr-0 lg:pr-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 08</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">フォト・ビジュアル制作（佐々木健治）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">フォト・ビジュアル制作（佐々木健治）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>visual artist / photographerとして島根と東京を拠点に活動。Instagramフォロワー6.1万人。夕景・月・シルエットを主題にした作品で、地方の風景の価値を引き出すビジュアルを制作しています。</p>
                                     </div>
@@ -434,23 +417,23 @@
                                                                     </div>
                             </div>
                             <div class="lg:col-span-7 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="577" src="img/uploads/2026/10/kenji-photo-1024x577.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                                             </div>
                 </div>
                             <!-- Elegant Work Item 9 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-7 order-2 lg:order-1 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <div class="img-placeholder w-full h-full text-primary/40">Portfolio Image</div>
                                                                     </div>
                             </div>
                             <div class="lg:col-span-5 order-1 lg:order-2">
                                 <div class="pl-0 lg:pl-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 09</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">移住者交流会（ふるさと島根定住財団様）</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">移住者交流会（ふるさと島根定住財団様）</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         <p>ふるさと島根定住財団様主催の移住者交流会を企画・運営。移住者同士のつながりづくりと、地域の魅力発信を行いました。</p>
                                     </div>
@@ -462,12 +445,12 @@
                                             </div>
                 </div>
                             <!-- Elegant Work Item 10 -->
-                <div class="mb-32 fade-in-up">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="mb-20 md:mb-32 fade-in-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                                                     <div class="lg:col-span-5">
                                 <div class="pr-0 lg:pr-8">
                                     <span class="text-accent text-xs font-en tracking-[0.2em] mb-4 block font-bold">CASE STUDY 10</span>
-                                    <h3 class="font-serif text-2xl tracking-widest mb-6 text-primary font-bold">株式会社クリエット様</h3>
+                                    <h3 class="font-serif text-xl md:text-2xl tracking-widest mb-6 text-primary font-bold leading-relaxed">株式会社クリエット様</h3>
                                     <div class="text-sm leading-[2] font-medium text-gray-600 mb-8">
                                         
 <p class="wp-block-paragraph">2026年1月に立ち上げたばかりの企業様<br>こども向けのプログラミングスクールを運営</p>
@@ -478,7 +461,7 @@
                                                                     </div>
                             </div>
                             <div class="lg:col-span-7 relative">
-                                <div class="premium-img-wrapper w-full aspect-video shadow-xl rounded-sm border border-gray-100">
+                                <div class="premium-img-wrapper w-full aspect-[4/3] sm:aspect-video shadow-xl rounded-sm border border-gray-100">
                                                                             <img width="1024" height="598" src="img/uploads/2026/03/S__199016453_0-e1774083069519-1024x598.jpg" class="w-full h-full object-cover wp-post-image" alt="" decoding="async" />                                                                    </div>
                             </div>
                                             </div>
@@ -489,7 +472,7 @@
                 <div class="text-center mb-10">
                     <p class="font-en text-xs tracking-[0.3em] text-accent font-bold">TRUSTED BY</p>
                 </div>
-                <div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60 hover:opacity-100 transition-all duration-700">
+                <div class="flex flex-wrap justify-center gap-x-10 gap-y-6 md:gap-24 opacity-60 hover:opacity-100 transition-all duration-700">
                     <span class="text-xl font-en font-bold text-primary tracking-[0.2em]">Adobe</span>
                     <span class="text-xl font-en font-bold text-primary tracking-[0.2em]">Fujifilm</span>
                     <span class="text-xl font-en font-bold text-primary tracking-[0.2em]">radiko</span>
@@ -502,16 +485,15 @@
     </section>
 
     <!-- Photography Section (佐々木健治 作品) -->
-            <section id="photography" class="py-32 bg-bgDark overflow-hidden">
+            <section id="photography" class="py-20 md:py-32 bg-bgDark overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center fade-in-up mb-16">
+            <div class="text-center fade-in-up mb-12 md:mb-16">
                 <h3 class="font-en tracking-[0.3em] text-xs text-accent font-bold mb-4">PHOTOGRAPHY</h3>
                 <h2 class="font-serif text-3xl md:text-5xl tracking-widest text-primary font-bold mb-8">
                     山陰の夕景を、作品に。
                 </h2>
                 <p class="font-medium text-sm md:text-base leading-[2.5] tracking-widest text-gray-700 max-w-3xl mx-auto text-center">
-                    メンバーのフォトグラファー・佐々木健治による作品。<br class="hidden md:block">
-                    地方の風景の価値を引き出す、広告・SNS向けのビジュアルを制作しています。
+                    メンバーのフォトグラファー・佐々木健治による作品。<br class="hidden md:block">地方の風景の価値を引き出す、広告・SNS向けのビジュアルを制作しています。
                 </p>
             </div>
 
@@ -537,7 +519,7 @@
                             </div>
 
             <div class="mt-12 text-center fade-in-up">
-                <a href="member/kenji.html" class="inline-flex items-center text-xs font-en tracking-[0.2em] text-primary hover:text-accent transition-colors uppercase font-bold">
+                <a href="member/kenji.html" class="inline-flex items-center py-3 text-xs font-en tracking-[0.2em] text-primary hover:text-accent transition-colors uppercase font-bold">
                     Photo by Kenji Sasaki <i class="fa-solid fa-arrow-right ml-3"></i>
                 </a>
             </div>
@@ -545,9 +527,9 @@
     </section>
     
     <!-- Members Section -->
-    <section id="members" class="py-32 bg-white border-t border-gray-200">
+    <section id="members" class="py-20 md:py-32 bg-white border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="fade-in-up mb-24">
+            <div class="fade-in-up mb-12 md:mb-24">
                 <h2 class="section-title">
                     Members
                     <span class="subtitle">共に未来を創るプロフェッショナル</span>
@@ -555,14 +537,14 @@
             </div>
 
             
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
                                             <div class="fade-in-up group bg-white p-6 rounded-sm shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative cursor-pointer">
                             <a href="member/suzu.html" class="absolute inset-0 z-10" aria-label="稲澤鈴夏 の専用ページへ"></a>
                             <div class="premium-img-wrapper aspect-square mb-6 rounded-full overflow-hidden shadow-md mx-auto w-3/4 border-4 border-white">
                                                                     <img src="img/member-suzu.jpg" alt="稲澤鈴夏" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Member'">
                                                             </div>
                             <div class="text-center">
-                                                                    <p class="text-accent text-[0.65rem] font-en tracking-[0.2em] mb-2 font-bold uppercase">代表／プロデューサー・PR・メディア取材獲得支援</p>
+                                                                    <p class="text-accent text-xs md:text-[0.7rem] tracking-[0.15em] mb-2 font-bold text-balance">代表／プロデューサー・PR・メディア取材獲得支援</p>
                                                                 <h3 class="font-serif text-lg tracking-widest text-primary font-bold mb-1">稲澤鈴夏</h3>
                                                                     <p class="font-en text-xs text-gray-500 mb-4 tracking-widest">Suzuka Inazawa</p>
                                                                                                     <div class="relative z-20 inline-block mb-4">
@@ -572,6 +554,9 @@
                                                             </div>
                             <p class="text-xs leading-[2] font-medium text-gray-600 border-t border-gray-100 pt-4 relative z-0">
                                 SNSを起点に企業や地域とつながり、営業力と実行力で成果に直結させることを得意と…                            </p>
+                            <p class="mt-4 text-right font-en text-[0.7rem] tracking-[0.2em] font-bold text-primary group-hover:text-accent transition-colors uppercase">
+                                Profile <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </p>
                         </div>
                                             <div class="fade-in-up group bg-white p-6 rounded-sm shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative cursor-pointer">
                             <a href="member/saori.html" class="absolute inset-0 z-10" aria-label="原田沙織 の専用ページへ"></a>
@@ -579,7 +564,7 @@
                                                                     <img src="img/member-saori.jpg" alt="原田沙織" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Member'">
                                                             </div>
                             <div class="text-center">
-                                                                    <p class="text-accent text-[0.65rem] font-en tracking-[0.2em] mb-2 font-bold uppercase">リール動画制作・SNS運用</p>
+                                                                    <p class="text-accent text-xs md:text-[0.7rem] tracking-[0.15em] mb-2 font-bold text-balance">リール動画制作・SNS運用</p>
                                                                 <h3 class="font-serif text-lg tracking-widest text-primary font-bold mb-1">原田沙織</h3>
                                                                     <p class="font-en text-xs text-gray-500 mb-4 tracking-widest">Saori Harada</p>
                                                                                                     <div class="relative z-20 inline-block mb-4">
@@ -589,6 +574,9 @@
                                                             </div>
                             <p class="text-xs leading-[2] font-medium text-gray-600 border-t border-gray-100 pt-4 relative z-0">
                                 オシャレさの中に「つい見たくなる動画」を構成。届けたい想いをそのまま魅せる『世界…                            </p>
+                            <p class="mt-4 text-right font-en text-[0.7rem] tracking-[0.2em] font-bold text-primary group-hover:text-accent transition-colors uppercase">
+                                Profile <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </p>
                         </div>
                                             <div class="fade-in-up group bg-white p-6 rounded-sm shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative cursor-pointer">
                             <a href="member/kenji.html" class="absolute inset-0 z-10" aria-label="佐々木健治 の専用ページへ"></a>
@@ -596,7 +584,7 @@
                                                                     <img src="img/member-kenji.jpg" alt="佐々木健治" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Member'">
                                                             </div>
                             <div class="text-center">
-                                                                    <p class="text-accent text-[0.65rem] font-en tracking-[0.2em] mb-2 font-bold uppercase">フォトグラファー・コンテンツ制作</p>
+                                                                    <p class="text-accent text-xs md:text-[0.7rem] tracking-[0.15em] mb-2 font-bold text-balance">フォトグラファー・コンテンツ制作</p>
                                                                 <h3 class="font-serif text-lg tracking-widest text-primary font-bold mb-1">佐々木健治</h3>
                                                                     <p class="font-en text-xs text-gray-500 mb-4 tracking-widest">Kenji Sasaki</p>
                                                                                                     <div class="relative z-20 inline-block mb-4">
@@ -606,6 +594,9 @@
                                                             </div>
                             <p class="text-xs leading-[2] font-medium text-gray-600 border-t border-gray-100 pt-4 relative z-0">
                                 写真とデザインで最強の広告をワンストップで制作。写真・言葉・発信・人のネットワー…                            </p>
+                            <p class="mt-4 text-right font-en text-[0.7rem] tracking-[0.2em] font-bold text-primary group-hover:text-accent transition-colors uppercase">
+                                Profile <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </p>
                         </div>
                                             <div class="fade-in-up group bg-white p-6 rounded-sm shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative cursor-pointer">
                             <a href="member/chiharu.html" class="absolute inset-0 z-10" aria-label="隅井千晴 の専用ページへ"></a>
@@ -613,7 +604,7 @@
                                                                     <img src="img/member-chiharu.jpg" alt="隅井千晴" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300?text=Member'">
                                                             </div>
                             <div class="text-center">
-                                                                    <p class="text-accent text-[0.65rem] font-en tracking-[0.2em] mb-2 font-bold uppercase">動画編集・Instagramクリエイター</p>
+                                                                    <p class="text-accent text-xs md:text-[0.7rem] tracking-[0.15em] mb-2 font-bold text-balance">動画編集・Instagramクリエイター</p>
                                                                 <h3 class="font-serif text-lg tracking-widest text-primary font-bold mb-1">隅井千晴</h3>
                                                                     <p class="font-en text-xs text-gray-500 mb-4 tracking-widest">Chiharu Sumii</p>
                                                                                                     <div class="relative z-20 inline-block mb-4">
@@ -623,22 +614,24 @@
                                                             </div>
                             <p class="text-xs leading-[2] font-medium text-gray-600 border-t border-gray-100 pt-4 relative z-0">
                                 島根のグルメ＆スポットを紹介するInstagram「ちぃたび」を運用（運用2年・…                            </p>
+                            <p class="mt-4 text-right font-en text-[0.7rem] tracking-[0.2em] font-bold text-primary group-hover:text-accent transition-colors uppercase">
+                                Profile <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </p>
                         </div>
                                     </div>
                                     </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-32 bg-bgDark flex items-center justify-center overflow-hidden border-t border-gray-200">
+    <section id="contact" class="py-20 md:py-32 bg-bgDark flex items-center justify-center overflow-hidden border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-6 lg:px-12 w-full fade-in-up">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12 md:mb-16">
                 <p class="font-en tracking-[0.3em] text-xs text-accent font-bold mb-4 uppercase">Inquiry</p>
                 <h2 class="font-serif text-3xl md:text-5xl tracking-widest text-primary font-bold mb-8">
                     Contact
                 </h2>
                 <p class="font-medium text-sm md:text-base leading-[2.2] tracking-widest text-gray-600 mb-8">
-                    事業設計、SNS発信戦略、写真制作などに関する<br class="hidden md:block">
-                    ご質問やお仕事のご相談は、お気軽に下記フォームよりお問い合わせください。
+                    SNS運用・リール動画制作・PR／メディア戦略・写真制作などに関する<br class="hidden md:block">ご質問やお仕事のご相談は、お気軽に下記フォームよりお問い合わせください。
                 </p>
                 <div class="flex flex-wrap justify-center gap-3">
                     <span class="bg-white border border-gray-200 text-primary px-5 py-2 text-xs md:text-sm tracking-widest font-bold rounded-full shadow-sm">仕事を相談したい</span>
@@ -647,16 +640,19 @@
                 </div>
             </div>
 
-            <div class="premium-card bg-white p-8 md:p-16 rounded-sm shadow-md border border-gray-100 cf7-container">
+            <div class="premium-card bg-white p-6 md:p-16 rounded-sm shadow-md border border-gray-100 cf7-container">
                 
                 
 <div class="wpcf7 no-js" id="wpcf7-f201-o1" lang="ja" dir="ltr" data-wpcf7-id="201">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
 <form action="#" data-share-preview method="post" class="wpcf7-form init" aria-label="コンタクトフォーム" novalidate="novalidate" data-status="init">
 
-<p><label>お問い合わせ内容（複数選択可）<br />
-<span class="wpcf7-form-control-wrap" data-name="reason"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first"><label><input type="checkbox" name="reason[]" value="仕事を相談したい" /><span class="wpcf7-list-item-label">仕事を相談したい</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="reason[]" value="一緒に何かしたい" /><span class="wpcf7-list-item-label">一緒に何かしたい</span></label></span><span class="wpcf7-list-item last"><label><input type="checkbox" name="reason[]" value="S.projectに関わりたい" /><span class="wpcf7-list-item-label">S.projectに関わりたい</span></label></span></span></span></label>
-</p>
+<fieldset class="cf7-group">
+	<legend>お問い合わせ内容（複数選択可）
+	</legend>
+	<p><span class="wpcf7-form-control-wrap" data-name="reason"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first"><label><input type="checkbox" name="reason[]" value="仕事を相談したい" /><span class="wpcf7-list-item-label">仕事を相談したい</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="reason[]" value="一緒に何かしたい" /><span class="wpcf7-list-item-label">一緒に何かしたい</span></label></span><span class="wpcf7-list-item last"><label><input type="checkbox" name="reason[]" value="S.projectに関わりたい" /><span class="wpcf7-list-item-label">S.projectに関わりたい</span></label></span></span></span>
+	</p>
+</fieldset>
 <p><label> 御社名・組織名（任意）<br />
 <span class="wpcf7-form-control-wrap" data-name="your-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="例：株式会社S.project" value="" type="text" name="your-company" /></span> </label>
 </p>
@@ -670,7 +666,7 @@
 <span class="wpcf7-form-control-wrap" data-name="your-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" autocomplete="tel" aria-invalid="false" placeholder="例：090-1234-5678" value="" type="tel" name="your-tel" /></span> </label>
 </p>
 <p><label> ご相談・お問い合わせ種別（必須）<br />
-<span class="wpcf7-form-control-wrap" data-name="your-subject"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" name="your-subject"><option value="事業設計・伴走支援について">事業設計・伴走支援について</option><option value="SNS運用・発信戦略について">SNS運用・発信戦略について</option><option value="写真撮影（宣材・広告等）について">写真撮影（宣材・広告等）について</option><option value="研修・実践講座について">研修・実践講座について</option><option value="その他（協業・ご相談など）">その他（協業・ご相談など）</option></select></span> </label>
+<span class="wpcf7-form-control-wrap" data-name="your-subject"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" name="your-subject"><option value="">選択してください</option><option value="SNS運用について">SNS運用について</option><option value="リール動画制作について">リール動画制作について</option><option value="PR・メディア取材獲得について">PR・メディア取材獲得について</option><option value="地域ブランディングについて">地域ブランディングについて</option><option value="写真撮影（宣材・広告等）について">写真撮影（宣材・広告等）について</option><option value="SNS勉強会について">SNS勉強会について</option><option value="その他（協業・ご相談など）">その他（協業・ご相談など）</option></select></span> </label>
 </p>
 <p><label> ご相談内容（必須）<br />
 <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="具体的なご相談内容やご要望をご記入ください。" name="your-message"></textarea></span> </label>
@@ -690,19 +686,15 @@
                 
                 <div class="text-center md:text-left">
                     <a href="index.html" class="font-en font-bold text-3xl tracking-[0.2em] text-white">
-                        Sproject<span class="text-accent">.</span>
+                        S<span class="text-accent">.</span>project
                     </a>
                     <p class="font-serif mt-4 text-sm font-medium tracking-widest text-white/80">山陰を、もっと面白がる。</p>
                 </div>
                 
-                <div class="flex space-x-8">
-                    <a href="#" class="text-white/60 hover:text-accent hover:-translate-y-1 transform transition-all text-2xl"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="text-white/60 hover:text-accent hover:-translate-y-1 transform transition-all text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
+                                            </div>
             
-            <div class="mt-20 pt-8 border-t border-white/20 text-center md:text-left text-[0.6rem] font-en tracking-[0.2em] text-white/50 uppercase font-bold">
-                &copy; 2026 Sproject. All Rights Reserved.
+            <div class="mt-20 pt-8 border-t border-white/20 text-center md:text-left text-[0.65rem] font-en tracking-[0.2em] text-white/60 font-bold">
+                &copy; 2026 S.project All Rights Reserved.
             </div>
         </div>
     </footer>
